@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Font Awesome Icons link-->
+    <link rel="stylesheet" href="css/all.min.css">
+     <!-- Main Template CSS File and Bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+     <link rel="stylesheet" href="css/style.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <title>Elaurassi ¦ Reservation</title>
+</head>
+<body>
+    <!-- Header Section Starts Here  -->
+    <header class="container-fluid shadow-4">
+        <!-- Navbav Starts here -->
+        <nav class="navbar navbar-expand-lg bg-white fixed-top d-flex flex-column border-bottom border-bottom-1 "> 
+          <div class="contact container d-flex  justify-content-start pb-2" style="color: var(--main-color);">
+            <span class="phone antic-slab-regular fs-6 fw-light me-3">+213 21 74 82 52  | </span>
+            <span class="email antic-slab-regular fs-6 fw-light">CONTACT@ELAURASSI.DZ</span>
+          </div>       
+          <div class="container ">
+            <!-- logo -->
+            <a class="navbar-brand" href="#"><img src="images/logo.png"  style="width: 50px;height: 30px;" alt="logo"></a>
+            <!-- toggle Btn  -->
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- SideBar -->
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <!-- sideBar-Header -->
+              <div class="offcanvas-header  border-bottom" style="color: var(--main-color);">
+                <a class="navbar-brand" href="#"><img src="images/logo.png"  style="width: 50px;height: 30px;" alt="logo"></a>
+                <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <!-- sideBar-Body -->
+              <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+                <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+                  <li class="nav-item mx-2">
+                    <a class="nav-link  antic-slab-regular fs-6 active" style="border-bottom:1px solid var(--main-color);" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link antic-slab-regular fs-6" href="bedrooms.html">Bedrooms</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link antic-slab-regular fs-6" href="">Sequels</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link antic-slab-regular fs-6" href="">Executive Suites</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link antic-slab-regular fs-6" href="">Restaurants and Lounges</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link antic-slab-regular fs-6" href="">Receptions and Events</a>
+                  </li>
+                </ul>
+                <!-- Login / Sign Up -->
+                <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3" id="linkLoginRegister">
+                  <a class="nav-link  antic-slab-regular" id="linkLogin" href="loginregister.html"><i class="fa-solid fa-arrow-right-to-bracket me-2" style="color:var(--main-color)"></i>Login</a>
+                  <a class="nav-link  antic-slab-regular" id="linkRegister" href="loginregister.html"><i class="fa-solid fa-user-plus me-2" style="color:var(--main-color)"></i>Register</a>
+                </div>
+                <!-- User Info -->
+                <div id="div-info">
+                  <div class="p-4 d-flex  flex-column flex-lg-row justify-content-center align-items-center gap-3" id="user-info" style="color: var(--main-color);">
+                    <a class="antic-slab-regular fs-6 fw-bold text-decoration-none mx-3" id="user" href="#" style="color:var(--main-color)"></a>
+                    <a class="reservationCart antic-slab-regular fs-6 fw-bold text-decoration-none position-relative mx-3 " id="reserCart" href="#">
+                      <i class="fa-solid fa-house-user" style="color:var(--main-color)"></i>
+                      <span class="badge position-absolute text-white">1</span>
+                      <div id="cartUser">
+                        <div class="cartUser-element antic-slab-regular-fs text-dark text-center" id="cartUser-content"></div>
+                        <a class="antic-slab-regular fs-6 fw-bold " href="cartUser.html">View Your Reservation</a>
+                      </div>
+                    </a>
+                    <a class="nav-link antic-slab-regular fs-6 fw-bold" id="logout" href="#">Log Out</a>
+                  </div>
+                </div>
+
+                
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- Header Section Ends Here  -->
+
+      <!-- Form Section Starts Here  -->
+
+      <main class="" style="margin-top: 190px;">
+        <div class="main-title text-center ">
+            <h2 class="antic-slab-regular fs-5" style="color: var(--main-color);letter-spacing: 1px;">ACCOMMODATION RESERVATION</h2>
+            <p class="dancing-script fs-4 mb-3 "style="color: var(--main-color);">Please fill out the form with your information to contact you</p>
+        </div>
+        <div class="formReservation container-fluid py-1" style="background-color: var(--background-color);">
+            <!-- Start Form -->
+            <form class="container mx-auto border border-1 bg-white row g-3 mt-1 mb-3 w-50">
+                <div class="form-group-date col-lg-4">
+                    <div class="form-group d-flex flex-column justify-content-center align-items-center">
+                      <label for="dateArrival" class="form-label antic-slab-regular-fs text-uppercase" style="color: var(--main-color);">ARRIVAL</label>
+                      <div class="datepicker date input-group rounded-1 p-0">
+                          <input type="text" placeholder="Select a date" class="form-control antic-slab-regular-fs border-end-0" id="dateArrival">
+                          <div class="input-group-append border-start-0"><span class="input-group-text border-0 bg-white px-4 py-2"><i class="fa fa-calendar"></i></span></div>
+                      </div>
+                    </div>
+                </div>
+                <div class="form-group-date col-lg-4">
+                    <div class="form-group d-flex flex-column justify-content-center align-items-center mt-3 mt-lg-0">
+                      <label for="dateDeparture" class="form-label antic-slab-regular-fs text-uppercase" style="color: var(--main-color);">DEPARTURE</label>
+                      <div class="datepicker date input-group rounded-2 p-0">
+                          <input type="text" placeholder="Select a date" class="form-control antic-slab-regular-fs border-end-0" id="dateDeparture">
+                          <div class="input-group-append border-start-0"><span class="input-group-text border-0 bg-white px-4 py-2"><i class="fa fa-calendar"></i></span></div>
+                      </div>
+                    </div>
+                </div>                  
+                <div class="form-group-nbr-adults col-lg-2">
+                    <div class="form-group ">
+                        <div data-mdb-input-init class="form-outline d-flex flex-column justify-content-center align-items-center">
+                            <label class="form-label antic-slab-regular-fs text-uppercase mt-3 mt-lg-0" for="typeNumberAdultsForm" style="color: var(--main-color);">Number</label>
+                            <input type="number" id="typeNumberAdultsForm" class="form-control antic-slab-regular-fs" value="1" />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group-nbr-children col-lg-2">
+                    <div class="form-group">
+                        <div data-mdb-input-init class="form-outline d-flex flex-column justify-content-center align-items-center">
+                            <label class="form-label antic-slab-regular-fs text-uppercase mt-3 mt-lg-0" for="typeNumberChildrenForm" style="color: var(--main-color);">CHILDREN</label>
+                            <input type="number" id="typeNumberChildrenForm" class="form-control antic-slab-regular-fs" value="0" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div data-mdb-input-init class="form-outline d-flex flex-column justify-content-center align-items-center">
+                        <label for="typeRooms" class="form-label antic-slab-regular-fs text-uppercase mt-3 mt-lg-0" style="color: var(--main-color);">Type of Rooms</label>
+                        <select id="typeRooms" class="form-select  antic-slab-regular-fs">
+                            <option selected rel="26000" value="CHAMBRES LUXURY - 26000">LUXURY ROOMS - 26,000 DZD / Night</option>
+                            <option rel="26000" value="CHAMBRES EXECUTIVE FLOOR - 26000">EXECUTIVE FLOOR ROOMS - 26,000 DZD / Night</option>
+                            <option rel="22000" value="CHAMBRES STANDING - 22000">STANDARD ROOMS - 22,000 DZD / Night</option>
+                            <option rel="39000" value="SUITES JUNIORS - 39000">JUNIORS SUITES - 39000 DZD  / Night</option>
+                            <option rel="65000" value="SUITES SENIOR - 65000">SENIOR SUITES - 65,000 DZD / Night</option>                            
+                            <option rel="285300" value="SUITE PRÉSIDENTIELLE - 285300">PRESIDENTIAL SUITE - 285,300 DZD / Night</option>														
+                            <option rel="153000" value="EXECUTIVE SUITE - 153000">EXECUTIVE SUITE - 153,000 DZD / Night</option>    
+                        </select>
+                    </div>                   
+                </div>
+                <div class="col-lg-6">
+                    <div data-mdb-input-init class="form-outline d-flex flex-column justify-content-center align-items-center">
+                        <label for="numberRooms" class="form-label antic-slab-regular-fs text-uppercase mt-3 mt-lg-0" style="color: var(--main-color);">NUMBER OF ROOMS</label>
+                        <select id="numberRooms" class="form-select antic-slab-regular-fs">
+                            <option selected>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                        </select>                    
+                    </div>                    
+                </div>
+                <div class="col-lg-6">
+                    <div data-mdb-input-init class="form-outline d-flex flex-column justify-content-center align-items-center">
+                        <label for="payment" class="form-label antic-slab-regular-fs text-uppercase mt-3 mt-lg-0" style="color: var(--main-color);">Payment terms</label>
+                        <select id="payment" class="form-select antic-slab-regular-fs">
+                            <option selected value="Espéces">Espéces</option>
+                            <option value="Chéque">Check</option>
+                            <option value="Carte CIB">CIB card</option>
+                            <option value="Carte VISA">Visa</option>
+                            <option value="Master Card">Master Card</option>
+                            <option value="American Express">American Express</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div data-mdb-input-init class="form-outline d-flex flex-column justify-content-center align-items-center">
+                        <label for="civility" class="form-label antic-slab-regular-fs text-uppercase mt-3 mt-lg-0" style="color: var(--main-color);">Civility*</label>
+                        <select id="civility" class="form-select antic-slab-regular-fs">
+                            <option selected>Mr</option>
+                            <option> Mrs</option>
+                            <option> Miss</option>
+                        </select>                        
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div data-mdb-input-init class="form-outline d-flex flex-column justify-content-center align-items-center">
+                        <label for="firstNameForm" class="form-label antic-slab-regular-fs text-uppercase mt-3 mt-lg-0" style="color: var(--main-color);">First Name*</label>
+                        <input type="text" class="form-control antic-slab-regular-fs" id="firstNameForm">                                                
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div data-mdb-input-init class="form-outline d-flex flex-column justify-content-center align-items-center">
+                        <label for="lastNameForm" class="form-label antic-slab-regular-fs text-uppercase mt-3 mt-lg-0" style="color: var(--main-color);">LastName*</label>
+                        <input type="text" class="form-control antic-slab-regular-fs" id="lastNameForm">                                                
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div data-mdb-input-init class="form-outline d-flex flex-column justify-content-center align-items-center">
+                        <label for="phone" class="form-label antic-slab-regular-fs text-uppercase mt-3 mt-lg-0" style="color: var(--main-color);">Phone*</label>
+                        <input type="tel" class="form-control antic-slab-regular-fs" id="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">                                                
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div data-mdb-input-init class="form-outline d-flex flex-column justify-content-center align-items-center">
+                        <label for="emailForm" class="form-label antic-slab-regular-fs text-uppercase mt-3 mt-lg-0" style="color: var(--main-color);">Email</label>
+                        <input type="email" class="form-control antic-slab-regular-fs" id="emailForm">
+                    </div>                  
+                </div>
+                <div class="col-lg-4">
+                    <div data-mdb-input-init class="form-outline d-flex flex-column justify-content-center align-items-center">
+                        <label for="inputAddress" class="form-label antic-slab-regular-fs text-uppercase mt-3 mt-lg-0" style="color: var(--main-color);">Address</label>
+                        <input type="text" class="form-control antic-slab-regular-fs" id="inputAddress" placeholder="1234 Main St">
+                    </div>                  
+                </div>
+                <div class="col-12">
+                    <div data-mdb-input-init class="form-outline d-flex flex-column justify-content-center align-items-center">
+                        <label for="messageForm" class="form-label antic-slab-regular-fs text-uppercase mt-3 mt-lg-0" style="color: var(--main-color);">Your Message</label>
+                        <textarea class="form-control antic-slab-regular-fs w-100" id="messageForm" aria-label="With textarea" style="height: 150px;"></textarea>
+                    </div>                  
+                </div>                
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input antic-slab-regular-fs" type="checkbox" id="gridCheck" >
+                    <label class="form-check-label antic-slab-regular mt-3 mt-lg-0" for="gridCheck" style="font-size: 0.8em;letter-spacing: 1px;line-height: 2;">
+                        I accept that the information entered will be used to contact you in the context of your request and the commercial relationship that may result from it, in accordance with our <span class="accept-reser" style="color: var(--main-color);">Confidentiality Policy</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                    <div class="btn-res d-flex flex-column justify-content-center align-items-center pb-4">
+                        <button type="submit" class="btn btn-outline-secondary btn-rounded antic-slab-regular-fs px-3 mt-1" id="reser-btnForm" data-mdb-ripple-init  data-mdb-ripple-color="dark">Confirm Your Reservation</button>
+                    </div>                  
+                </div>
+              </form>
+              <!-- End Form -->
+        </div>
+      </main>
+      <!-- Main Section Ends Here -->
+
+      <!-- Footer Start Here -->
+      <footer class="">
+        <div class="adressFooter container w-75 border-bottom border-bottom-1 mx-auto mt-5 mb-2">
+            <p class="contentAdress antic-slab-regular text-center" style="font-size: 12px;letter-spacing: 1px;line-height: 2;">HEAD OFFICE: 2, BOULEVARD FRANTZ FANON, LES TAGARINS, ALGIERS</p>
+        </div>
+        <div class="nav-footer d-flex flex-column flex-lg-row mt-2">
+            <ul class="navbar-nav  d-flex flex-column flex-lg-row justify-content-center align-items-center flex-grow-1 pe-3">
+                <li class="nav-item mx-5">
+                  <a class="nav-link antic-slab-regular-fs" href="index.html">OUR SERVICES</a>
+                </li>
+                <li class="nav-item mx-5">
+                  <a class="nav-link antic-slab-regular-fs" href="bedrooms.html">STOCK EXCHANGE AREA</a>
+                </li>
+                <li class="nav-item mx-5">
+                  <a class="nav-link antic-slab-regular-fs" href="sequels.html">RESERVATION</a>
+                </li>
+                <li class="nav-item mx-5">
+                  <a class="nav-link antic-slab-regular-fs" href="executiveSuites.html">CONTACT US</a>
+                </li>
+              </ul>
+        </div>
+        <div class="mediaSocial d-flex flex-column flex-lg-row justify-content-center align-items-center flex-grow-1 w-50 mt-4 mx-auto">            
+            <div class="d-flex socialIcons d-flex flex-column flex-lg-row justify-content-center align-items-center">
+                <a class="nav-link me-3" href="#"><span class="antic-slab-regular-fs me-3 mt-3">#EL AURASSI</span></a>
+                <a class="me-3" href="#"><i class="fab fa-facebook-f" style="color: var(--main-color);"></i></a>
+                <a class="me-3" href="#"><i class="fab fa-twitter" style="color: var(--main-color);"></i></a>
+                <a class="me-3" href="#"><i class="fab fa-instagram" style="color: var(--main-color);"></i></a>
+                <a class="me-3" href="#"><i class="fab fa-youtube" style="color: var(--main-color);"></i></a>
+            </div>
+        </div>
+        <div class="copyrightText container-fluid mt-3  d-flex justify-content-center pt-3 pb-0" style="background-color: var(--background-color);">
+            <p class="copyright antic-slab-regular" style="font-size: 0.8em;letter-spacing: 1px;line-height: 2;">&copy;The El Aurassi hotel 2020 | All rights reserved. Made by Edisoft</p>       
+        </div>
+    </footer>
+    <!-- Footer Ends Here -->
+
+     <!-- Extension jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Extension DATEPICKER -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <!-- Noyau JavaScript of Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- File Script -->
+    <script src="js/reservation.js"></script>
+  
+
+</body>

@@ -1,0 +1,308 @@
+/* Start Variables */
+:root {
+    --main-color: #B89E4A;
+    --main-background-color: #baa562;
+    /* --text-color:#000; */
+    /* --text-hover-color:#747474; */
+    /* --border-color: #e5e5e5; */
+    --background-color : #f5f5f5;
+    
+  } 
+  
+  /* End Variables */
+  
+  /* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  
+  }
+  
+html {
+  scroll-behavior: smooth;
+  }
+
+body {
+   
+  }
+
+ul {
+  list-style: none ;
+  }
+
+  /* End Global Rules */
+
+.antic-slab-regular {
+  font-family: "Antic Slab", serif;
+  /* font-weight: 400; */
+  /* font-size: 14px; */
+  /* font-style: normal; */
+ }
+
+ .antic-slab-regular-fs {
+  font-family: "Antic Slab", serif;
+  /* font-weight: 400; */
+  font-size: 14px;
+  /* font-style: normal; */
+ }
+ 
+/* <weight>: Use a value from 400 to 700 */
+
+.dancing-script {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  }
+
+@media (max-width: 992px){
+  
+.sidebar {
+  background-color: rgba(225, 225, 225, 0.15);
+  backdrop-filter: blur(10px);
+  }
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid var(--main-color);
+
+}
+
+#div-info {
+  display: none;
+}
+
+  .overley {
+
+    background-color: rgb(0 0 0 / 50%); 
+    position: absolute; 
+    width: 100%;
+    height: 100%;    
+    top: 0;
+    left: 0;
+  }
+
+  .landing {
+    animation: fade-up 3s !important;
+  }
+
+  @keyframes fade-up {
+      0% {
+        opacity: 0 !important;
+        transform: translateY(30px) scale(0.7);
+      }
+      100%  {
+        opacity: 1 !important;
+        transform: translateY(0px) scale(1);
+      }
+  }
+
+input.form-control[type="text"] {
+    border-radius: 5px 0 0 5px;
+    border: solid 1px rgba(0,0,0,.15);
+}
+
+input.form-control:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.15);
+}
+
+input.form-control::placeholder {
+    letter-spacing: 1px;
+}
+
+.input-group-append {
+    border: solid 1px rgba(0,0,0,.15);
+    border-radius: 0 5px 5px 0;
+}
+
+.input-group-text {
+    border-radius: 0 5px 5px 0;
+    color: var(--main-color);
+} 
+
+.datepicker-dropdown {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 5px;
+}
+
+.datepicker td, .datepicker th {
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 0.85rem;
+}
+
+.datepicker-dropdown:after {
+  border-bottom-color: #08c;
+}
+
+.datepicker-days .table-condensed thead tr:nth-child(2), .datepicker-months .table-condensed thead tr:nth-child(2),
+.datepicker-years .table-condensed thead tr:nth-child(2), .datepicker-decades .table-condensed thead tr:nth-child(2),
+.datepicker-centuries .table-condensed thead tr:nth-child(2) {
+  background: linear-gradient(to bottom,white,#B89E4A);
+  color: #fff;
+}
+.datepicker-days .table-condensed thead tr:nth-child(2) th:hover, .datepicker-months .table-condensed thead tr:nth-child(2) th:hover,
+.datepicker-years .table-condensed thead tr:nth-child(2) th:hover,.datepicker-decades .table-condensed thead tr:nth-child(2) th:hover,
+.datepicker-centuries .table-condensed thead tr:nth-child(2) th:hover {
+  background: linear-gradient(to bottom,white,#B89E4A);
+  color: #fff;
+}
+
+.datepicker-days .table-condensed tfoot, .datepicker-months .table-condensed tfoot, .datepicker-years .table-condensed tfoot,
+.datepicker-decades .table-condensed tfoot, .datepicker-centuries .table-condensed tfoot {
+  border-top: solid 1px rgba(0,0,0,.15);
+}
+
+.form-login {
+  background: url(../images/5262.jpg) rgba(0, 0, 0, 0.3);
+  background-blend-mode:multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  }
+
+  .input-field{
+    background: rgba(225, 225, 225, 0.2)!important;
+    height: 50px !important;
+    width: 100% !important;
+    padding: 0px 10px 0px 45px !important;
+    border-radius: 30px;
+    outline: none;
+    transition: .2s ease;
+  }
+  .input-field:hover, .input-field:focus {
+    background:var(--main-color)!important;
+    opacity: 0.7 !important;
+  }
+
+  ::-webkit-input-placeholder{
+    color: white;
+  }
+
+  .input-box i {
+    top:-35px;
+    left: 17px;
+  }
+
+  .submit {
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: rgba(255,255,255,0.7);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+  }
+
+  .submit:hover {
+    background: rgba(255,255,255,0.5);
+    box-shadow: 1px 5px 7px 1px rgba(0,0,0,0.2);
+  }
+
+  .two label a:hover {
+    text-decoration: underline !important;
+  }
+
+@media only screen and (max-width:540px) {
+  .form-login {
+    min-height: 100vh !important;
+  }
+
+  .form-box {
+    width: 100% !important;
+    height: 500px;
+    
+  }
+
+  .login-container, .register-container {
+    width:100% !important;
+    padding: 0 20px!important;
+  
+}
+.register-container .two-forms {
+  flex-direction: column !important;
+  gap:0 !important;
+}
+}
+
+.accept-reser:hover {
+  font-weight: bold;
+
+}
+
+.photos-desc{
+  position: relative;
+  background-image: url(../images/6645.jpg);
+  background-size: cover;
+  height: 600px;
+  background-attachment: fixed;
+}
+
+@media (max-width:992px) {
+  .photos-item , .infos-item {
+    width:100% !important;
+    padding: 15px !important;
+  } 
+  .items .item:nth-child(2) {
+    display: flex;
+    flex-direction: column-reverse!important;
+  } 
+
+}
+
+.badge {
+  width:15px; 
+  height:15px; 
+  background-color:var(--main-background-color);
+  top:-3px;
+  left:20px;
+  border-radius:50%; 
+  font-size:9px;
+  display:none;
+  text-align: center;
+  padding-left: 3px;
+  padding-right: 8px;
+}
+
+/* p:nth-child(2) */
+
+#cartUser {
+  position:absolute;
+  width:250px;
+  transform:translate(50px,0);
+  /* background-color:white; */
+  top:120px;
+  padding:10px;
+  border:solid 1px var(--main-color);
+  display: none;
+}
+
+.cartUser{
+  
+  
+}
+
+#cartUser a {
+  color:var(--main-color);
+  display:block;
+  margin:4px 0;
+  padding:0;
+  text-decoration:none;
+  text-align:center;
+}
+
+
+
+.fa-heart:hover {
+  cursor: pointer;
+  /* color: var(--main-background-color); */
+
+}
+.favorite{
+  display: none;
+}
+

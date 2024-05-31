@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Font Awesome Icons link-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Boxicon Icons link-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <!-- Main Template CSS File and Bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="css/style.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <title>Elaurassi¦ Login/Register </title>
+</head>
+<body class="form-login">
+    <section class="vh-100 vw-100" >
+        <div class="overley"></div>
+        <!-- Link Nav -->
+        <div class="d-flex justify-content-center align-items-center gap-5 py-5 position-relative z-index-2">
+            <a class="nav-link text-white antic-slab-regular p-2" id="loginlink" href="#" ><i class="fa-solid fa-arrow-right-to-bracket me-2" style="color:var(--main-color)"></i>Login</a>
+            <a class="nav-link text-white antic-slab-regular p-2" id="registerlink" href="#" ><i class="fa-solid fa-user-plus me-2" style="color:var(--main-color)"></i>Register</a>
+        </div>
+        <!-- Login and Register  Form  -->        
+        <div class="loginRegisterContent d-flex justify-content-center align-items-center">
+            <!-- Form box -->
+            <div class="form-box position-relative d-flex align-items-center justify-content-center" style="width: 512px; height: 500px ;overflow: hidden; z-index: 2;">
+                <!-- Login Form -->
+                <div class="login-container d-flex flex-column position-absolute" id="login" style="width: 500px; left: 4px; transition: 0.5s ease-in-out;">
+                    <div class="top">
+                        <span class="text-white py-2 px-0 d-flex justify-content-center" style="font-size: small;">Don't Have an account? 
+                            <a class=" text-white antic-slab-regular fw-medium ms-2" id="registerformlink" href="#">Sign UP</a>
+                        </span>
+                        <h3 class="text-white fs-3 text-center pt-2 px-0 pb-4">Login</h3>
+                    </div>
+                    <div class="two-forms d-flex flex-column">
+                        <div class="input-box">
+                            <input type="email" class="input-field fs-6 fw-lighter text-white border-0" id="emailLogin"  placeholder="Email"/>
+                            <i class="bx bx-envelope  position-relative text-white"></i>
+                        </div>
+                        <div class="input-box">
+                            <input type="password" class="input-field fs-6 fw-lighter text-white border-0" id="passwordLogin"  placeholder="Password"/>
+                            <i class="bx bx-lock-alt  position-relative text-white"></i>
+                        </div>
+                        <div class="input-box">
+                            <input type="submit" class="submit fs-5 fw-medium text-dark w-100" id="sign-in" value="Sign In" style="height: 45px;"/>
+                        </div>
+                        <div class="two-col d-flex justify-content-between text-secondary fs-6 mt-3">
+                            <div class="one d-flex gap-2">
+                                <input type="checkbox" id="login-check">
+                                <label for="login-check" style="color: var(--main-color);">Remember Me</label>
+                            </div>
+                            <div class="two">
+                                <label><a href="#" class="text-decoration-none" style="color: var(--main-color);">Forgot Password?</a></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ends Login Form -->
+                <!-- Register Form -->
+                <div class="register-container d-flex flex-column position-absolute" id="register" style="width: 500px;right: -520px; transition: 0.5s ease-in-out;">
+                    <div class="top">
+                        <span class="text-white py-2 px-0 d-flex justify-content-center" style="font-size: small;">Have an account? 
+                            <a class=" text-white antic-slab-regular fw-medium ms-2" id="loginformlink" href="#">Login</a></span>
+                        <h3 class="text-white fs-3 text-center pt-2 px-0 pb-4">Sign Up</h3>
+                    </div>
+                    <div class="two-forms d-flex flex-column">
+                        <div class="input-box">
+                            <input type="text" class="input-field fs-6 fw-lighter text-white border-0" id="firstNameRegister"  placeholder="FirstName"/>
+                            <i class="bx bx-user position-relative text-white"></i>
+                        </div>
+                        <div class="input-box">
+                            <input type="text" class="input-field fs-6 fw-lighter text-white border-0" id="lastNameRegister"  placeholder="LastName"/>
+                            <i class="bx bx-user  position-relative text-white"></i>
+                        </div>
+                        <div class="input-box">
+                            <input type="email" class="input-field fs-6 fw-lighter text-white border-0" id="emailRegister"  placeholder="Email"/>
+                            <i class="bx bx-envelope  position-relative text-white"></i>
+                        </div>
+                        <div class="input-box">
+                            <input type="password" class="input-field fs-6 fw-lighter text-white brder-0" id="passwordRegister"  placeholder="Password"/>
+                            <i class="bx bx-lock-alt  position-relative text-white"></i>
+                        </div>
+                        <div class="input-box">
+                            <input type="submit" class="submit fs-5 fw-medium text-dark w-100" id="sign-up" value="Register" style="height: 45px;"/>
+                        </div>
+                        <div class="two-col d-flex justify-content-between fs-6 mt-3" style="color: var(--main-color);">
+                            <div class="one d-flex gap-2">
+                                <input type="checkbox" id="register-check">
+                                <label for="register-check">Remember Me</label>
+                            </div>
+                            <div class="two">
+                                <label><a href="#" class="text-decoration-none" style="color: var(--main-color);">Terms & Conditions</a></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ends Register Form -->
+            </div>
+            <!-- Ends Form box -->            
+        </div>
+        <!-- Ends Login and Register  Form  -->
+    </section>    
+    
+    <!-- Noyau JavaScript of Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- File Script -->
+    <script src="js/loginregister.js"></script>
+</body>

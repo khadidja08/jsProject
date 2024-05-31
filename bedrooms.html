@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Font Awesome Icons link-->
+    <link rel="stylesheet" href="css/all.min.css">
+     <!-- Main Template CSS File and Bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+     <link rel="stylesheet" href="css/style.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <title>Elaurassi ¦ Bedrooms</title>
+</head>
+<body>
+    <!-- Header Section Starts Here  -->
+    <header class="container-fluid shadow-4">
+        <!-- Navbav Starts here -->
+        <nav class="navbar navbar-expand-lg bg-white fixed-top d-flex flex-column border-bottom border-bottom-1 "> 
+          <div class="contact container d-flex  justify-content-start pb-2" style="color: var(--main-color);">
+            <span class="phone antic-slab-regular fs-6 fw-light me-3">+213 21 74 82 52  | </span>
+            <span class="email antic-slab-regular fs-6 fw-light">CONTACT@ELAURASSI.DZ</span>
+          </div>       
+          <div class="container ">
+            <!-- logo -->
+            <a class="navbar-brand" href="#"><img src="images/logo.png"  style="width: 50px;height: 30px;" alt="logo"></a>
+            <!-- toggle Btn  -->
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- SideBar -->
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <!-- sideBar-Header -->
+              <div class="offcanvas-header  border-bottom" style="color: var(--main-color);">
+                <a class="navbar-brand" href="#"><img src="images/logo.png"  style="width: 50px;height: 30px;" alt="logo"></a>
+                <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <!-- sideBar-Body -->
+              <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+                <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+                  <li class="nav-item mx-2">
+                    <a class="nav-link  antic-slab-regular fs-6 active" style="border-bottom:1px solid var(--main-color);" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link antic-slab-regular fs-6" href="bedrooms.html">Bedrooms</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link antic-slab-regular fs-6" href="">Sequels</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link antic-slab-regular fs-6" href="">Executive Suites</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link antic-slab-regular fs-6" href="">Restaurants and Lounges</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link antic-slab-regular fs-6" href="">Receptions and Events</a>
+                  </li>
+                </ul>
+                <!-- Login / Sign Up -->
+                <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3" id="linkLoginRegister">
+                  <a class="nav-link  antic-slab-regular" id="linkLogin" href="loginregister.html"><i class="fa-solid fa-arrow-right-to-bracket me-2" style="color:var(--main-color)"></i>Login</a>
+                  <a class="nav-link  antic-slab-regular" id="linkRegister" href="loginregister.html"><i class="fa-solid fa-user-plus me-2" style="color:var(--main-color)"></i>Register</a>
+                </div>
+                <!-- User Info -->
+                <div id="div-info">
+                  <div class="p-4 d-flex  flex-column flex-lg-row justify-content-center align-items-center gap-3" id="user-info" style="color: var(--main-color);">
+                    <a class="antic-slab-regular fs-6 fw-bold text-decoration-none mx-3" id="user" href="#" style="color:var(--main-color)"></a>
+                    <a class="reservationCart antic-slab-regular fs-6 fw-bold text-decoration-none position-relative mx-3 " id="reserCart" href="#">
+                      <i class="fa-solid fa-house-user" style="color:var(--main-color)"></i>
+                      <span class="badge position-absolute text-white"></span>
+                      <div id="cartUser">
+                        <div class="cartUser-element antic-slab-regular-fs text-dark text-center" id="cartUser-content"></div>
+                       
+                        <a class="antic-slab-regular fs-6 fw-bold " href="cartUser.html">View Your Reservation</a>
+                      </div>
+                    </a>
+                    <a class="nav-link antic-slab-regular fs-6 fw-bold" id="logout" href="#">Log Out</a>
+                  </div>
+                </div>                
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- Header Section Ends Here  -->
+
+      <!-- General Description Starts Here -->      
+      <main class="main-title d-flex justify-content-center align-items-center mb-5" style="margin-top: 190px;">
+        <div class="description text-center w-75">
+            <h2 class="antic-slab-regular fw-light fs-5 text-uppercase mb-3 " style="color: var(--main-color);letter-spacing: 2px;">Bedrooms</h2>
+            <h4 class="dancing-script fs-1 mb-5" style="color: var(--main-color);letter-spacing: 2px;">Where luxury meets the modern art of living</h4>
+            <p class="desc-bedrooms antic-slab-regular text-center text-break" style="font-size: 0.8em;letter-spacing: 1px;line-height: 2;">
+                Spacious and elegantly decorated, discover rooms, decorated in rich colors, conducive to relaxation. A refined balance of functionality
+                and comfort, the rooms at the El Aurassi hotel are distinguished by the emphasis placed on the smallest detail, with the sole aim of enhancing your feeling of well-being.
+            </p>
+        </div>
+      </main>
+      <!-- General Description Ends Here -->
+
+      <!-- Photo Description Starts Here -->
+      <section class="photos-desc">
+      </section>
+      <!-- Phots Description Ends Here -->
+
+      <!-- Bedrooms Items Starts Here -->
+      <section class="bedrooms-items">
+        <h2 class="text-center antic-slab-regular fst-italic" style="color: var(--main-color);margin-bottom: 130px;margin-top: 130px;">STAY IN A ROOM IN ALGIERS BY HOTEL ELAURASSI</h2>
+        <div class="items">
+            
+        </div>
+      </section>
+      <!-- Bedrooms Items Ends Here -->
+
+      <!-- Footer Start Here -->
+      <footer class="">
+        <div class="adressFooter container w-75 border-bottom border-bottom-1 mx-auto mt-5 mb-2">
+            <p class="contentAdress antic-slab-regular text-center" style="font-size: 12px;letter-spacing: 1px;line-height: 2;">HEAD OFFICE: 2, BOULEVARD FRANTZ FANON, LES TAGARINS, ALGIERS</p>
+        </div>
+        <div class="nav-footer d-flex flex-column flex-lg-row mt-2">
+            <ul class="navbar-nav  d-flex flex-column flex-lg-row justify-content-center align-items-center flex-grow-1 pe-3">
+                <li class="nav-item mx-5">
+                  <a class="nav-link antic-slab-regular-fs" href="index.html">OUR SERVICES</a>
+                </li>
+                <li class="nav-item mx-5">
+                  <a class="nav-link antic-slab-regular-fs" href="bedrooms.html">STOCK EXCHANGE AREA</a>
+                </li>
+                <li class="nav-item mx-5">
+                  <a class="nav-link antic-slab-regular-fs" href="sequels.html">RESERVATION</a>
+                </li>
+                <li class="nav-item mx-5">
+                  <a class="nav-link antic-slab-regular-fs" href="executiveSuites.html">CONTACT US</a>
+                </li>
+              </ul>
+        </div>
+        <div class="mediaSocial d-flex flex-column flex-lg-row justify-content-center align-items-center flex-grow-1 w-50 mt-4 mx-auto">            
+            <div class="d-flex socialIcons d-flex flex-column flex-lg-row justify-content-center align-items-center">
+                <a class="nav-link me-3" href="#"><span class="antic-slab-regular-fs me-3 mt-3">#EL AURASSI</span></a>
+                <a class="me-3" href="#"><i class="fab fa-facebook-f" style="color: var(--main-color);"></i></a>
+                <a class="me-3" href="#"><i class="fab fa-twitter" style="color: var(--main-color);"></i></a>
+                <a class="me-3" href="#"><i class="fab fa-instagram" style="color: var(--main-color);"></i></a>
+                <a class="me-3" href="#"><i class="fab fa-youtube" style="color: var(--main-color);"></i></a>
+            </div>
+        </div>
+        <div class="copyrightText container-fluid mt-3  d-flex justify-content-center pt-3 pb-0" style="background-color: var(--background-color);">
+            <p class="copyright antic-slab-regular" style="font-size: 0.8em;letter-spacing: 1px;line-height: 2;">&copy;The El Aurassi hotel 2020 | All rights reserved. Made by Edisoft</p>       
+        </div>
+    </footer>
+    <!-- Footer Ends Here -->
+
+    
+
+    <!-- Extension jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Extension DATEPICKER -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <!-- Noyau JavaScript of Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- File Script -->
+    <script src="js/badrooms.js"></script>
+</body>
